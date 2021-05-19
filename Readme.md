@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [сергей галкин](https://up.htmlacademy.ru/htmlcss/31/user/1692977).
-* Наставник: [сергей максименко](https://up.htmlacademy.ru/htmlcss/31/user/248863).
+* Студент: [Сергей Галкин](https://up.htmlacademy.ru/htmlcss/31/user/1692977).
+* Наставник: [Сергей Максименко](https://up.htmlacademy.ru/htmlcss/31/user/248863).
 
 ---
 
