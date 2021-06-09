@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-	 <link rel="icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico">
+	 <link href="css/normalize.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
   	<header>
-	<nav>
-		<a href>
-			<img src="img/logo.svg" width="138" height="70" alt="логотип">
+	<nav class="nav">
+		<a href="#">
+			<img class="nav_logo" src="img/logo.svg" width="138" height="70" alt="логотип">
 		</a>
-		<ul>
+		<ul class="nav_item">
 			<li><a href="blank.html">Информация</a></li>
 			<li><a href="blank.html">Фото и видео</a></li>
 			<li><a href="blank.html">Карта штата</a></li>
@@ -20,100 +22,104 @@
 	</nav>
 </header>
 <main>
-	<h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+	<h1 class="title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
 	<section>	
-		<img src="img/welcome-text.svg" width="456.65" height="350.88" alt="sedona">
-		<h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+		<img class="main_pic" src="img/welcome-text.svg" width="456.65" height="350.88" alt="sedona">
+		<h2 class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 	</section>
 	<!--описание города-->
 	<section>
-		<h2>Настоящий <br> городок</h2>
-		<p>— №1 —</p>
-		<p>Седона — не аттракцион для туристов, там <br>
-			течёт своя жизнь</p>
-		<img src="img/city.jpg" width="800" height="256" alt="живописный город">
-		<ul>
+		<div class="title_city">
+			<h2 class="text_city">Настоящий <br> городок</h2>
+			<p class="number">— №1 —</p>
+			<p>Седона — не аттракцион для туристов, там <br>
+				течёт своя жизнь</p>
+		</div>
+			<img class="pic_city" src="img/city.jpg" width="800" height="256" alt="живописный город">		
+		<ul class="item">
 			<li>
-				<h2>Жильё</h2>
-				<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-				<img src="img/icon-home.svg" width="75" height="72"alt="лого жильё">
+				<h2 class="item_title">Жильё</h2>
+				<p class="item_subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				<img class="item_icon" src="img/icon-home.svg" width="75" height="72"alt="лого жильё">
 			</li>
 			<li>
-				<h2>Еда</h2>
-				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-				<img src="img/icon-burger.svg" width="75" height="70"alt="лого еда">
+				<h2 class="item_title">Еда</h2>
+				<p class="item_subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				<img class="item_icon" src="img/icon-burger.svg" width="75" height="70"alt="лого еда">
 			</li>
 			<li>
-				<h2>Сувениры</h2>
-				<p>Не только китайского, но и местного	производства!!</p>
-				<img src="img/icon-box.svg" width="64" height="77"alt="лого сувениры">
+				<h2 class="item_title">Сувениры</h2>
+				<p class="item_subtitle">Не только китайского, но и местного	производства!!</p>
+				<img class="item_icon"src="img/icon-box.svg" width="64" height="77"alt="лого сувениры">
 			</li>
 		</ul>	
-		<h2>Там есть <br>Мост дьявола</h2>
-		<p>— №2 —</p>
-		<p>Да, по нему можно пройти! Если конечно <br>
+		<div class="title_canyon">
+			<h2 class="text_canyon">Там есть <br>Мост дьявола</h2>
+			<p class="number">— №2 —</p>
+			<p>Да, по нему можно пройти! Если конечно <br>
 			вы осмелитесь</p>
-		<img src="img/canyon.jpg" width="800" height="256" alt="каньон моста дьявола">
-		<ul>
+		</div>	
+		<img class="pic_canyon" src="img/canyon.jpg" width="800" height="256" alt="каньон моста дьявола">
+		<ul class="column">
 			<li>
-				<h2>небольшая <br>площадь</h2>
-				<p>— №3 —</p>
-				<p>все достопримечательности находятся очень близко</p>
+				<h2 class="item_title">небольшая <br>площадь</h2>
+				<p class="number">— №3 —</p>
+				<p class="item_subtitle">все достопримечательности находятся очень близко</p>
 			</li>
 			<li>
-				<h2>красивая <br>дорога</h2>
-				<p>— №4 —</p>
-				<p>ехать в седону из лас-вегаса совсем не скучно!</p>
+				<h2 class="item_title">красивая <br>дорога</h2>
+				<p class="number">— №4 —</p>
+				<p class="item_subtitle">ехать в седону из лас-вегаса совсем не скучно!</p>
 			</li>
 			<li>
-				<h2>мало <br>туристов</h2>
-				<p>— №5 —</p>
-				<p>большинство едет в гранд каньон и толпится там</p>
+				<h2 class="item_title">мало <br>туристов</h2>
+				<p class="number">— №5 —</p>
+				<p class="item_subtitle">большинство едет в гранд каньон и толпится там</p>
 			</li>
 		</ul>
 	</section>
 	<!--форма поиска гостиницы-->
-	<section>
-		<h3>Заинтересовались?</h3>
-		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-		<button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+	<section class="form">
+		<h3 class="form_title">Заинтересовались?</h3>
+		<p class="form_subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		<button class="form_button" type="button"><span class="button_text">поиск гостиницы в седоне</span></button>
 	</section>
 	<!--карта-->
-	<section>
+	<section class="map">
 		<img src="img/map.jpg" width="1199" height="594" alt="местоположение города Седона">
 	</section>	
 </main>
-<footer>
-	<div>
-		<h3>контакты</h3>
-		<p>#visitSEDONA</p>
-		<a href="tel:+78005558628">+7 800 555-86-28</a>
+<footer class="footer">
+	<div class="contact">
+		<h3 class="contact_title">контакты</h3>
+		<p class="contact_subtitle">#visitSEDONA</p>
+		<a class="tel" href="tel:+78005558628">+7 800 555-86-28</a>
 	</div>
-	<div>
-		<h3>соц сети</h3>
-		<ul>
+	<div class="smm">
+		<h3 class="smm_text">соц сети</h3>
+		<ul class="list_item">
 			<li>				
-				<a href="#">
+				<a class="smm_icon" href="#">
 					<img src="img/twitter-icon.svg" width="17" height="17" alt="twitter">
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a class="smm_icon" href="#">
 					<img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a class="smm_icon" href="#">
 					<img src="img/youtube-icon.svg" width="20" height="16" alt="youtube">
 				</a>
 			</li>
 		</ul>
 	</div>
-	<div>
-		<h3>разработчик</h3>
-		<a href="https://htmlacademy.ru/intensive/htmlcss">
-			<p>Website by</p>
-		<img src="https://via.placeholder.com/115x33" width="115" height="33" alt="logo html academy">
+	<div class="dev">
+		<h3 class="dev_title">разработчик</h3>
+		<a class="dev_link" href="https://htmlacademy.ru/intensive/htmlcss">
+			<p class="dev_text">Website by</p>
+		<img class="dev_icon" src="img/logo_htmlacademy.svg" width="115" height="33" alt="logo html academy">
 		</a>
 	</div>
 </footer>
