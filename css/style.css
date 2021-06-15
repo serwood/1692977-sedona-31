@@ -208,14 +208,16 @@
 	line-height: 21px;
 }
 .result {
+	color: var(--basic-white);
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	border-style: none;
+	background-color: transparent;
 }
 .result:hover{
 	background-color:var(--basic-white);
-	color:var(--basic-black)
+	color:var(--basic-black);
 }
 .search_title {
 	font-size: 21px;
@@ -265,7 +267,7 @@
 	color:var(--basic-black);	
 }
 .product_text:hover{
-	color:var(--special)
+	color:var(--special);
 }
 .product_text:active{
 	color: var(--basic-black);
@@ -276,7 +278,7 @@
 	text-transform: uppercase;
 	border-style: none;
 	background-color: var(--special);
-	color:var(--basic-white)
+	color:var(--basic-white);
 	font-weight: 700;
 }
 .product_info:hover{
