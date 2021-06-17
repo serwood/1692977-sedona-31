@@ -33,8 +33,7 @@
 	 font-family:"PTSans",Arial, serif;
 	 color: var(--basic-black);
 	 text-transform: uppercase;
-	 background-color: var(--basic-white);
-	 background-image: url("../img/background.jpg");
+	 background-color: var(--basic-white);	 
 	 background-position: top center;
 	 background-repeat: no-repeat;	 
 	 margin: 0 auto;
@@ -44,18 +43,18 @@
 
 .nav_item{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;	
+	margin: 0;
+	padding: 0;	
 }
-.nav_logo{
-	display: block;
-  margin: 0 auto;  
-}
- .nav_item a{
+
+.nav_item a{
 	 font-size: 14px;
 	 line-height: 26px;
 	 font-weight: 700;
 	 text-decoration: none;	
-	 color: var(--basic-black);
+	 color: var(--basic-black);	
+	 text-align: center;
  }
  .nav_item a:hover{
 	color: var(--special);
@@ -66,12 +65,22 @@
 
  .nav_item li{
 	list-style: none;
+	justify-self: center;
+ }
+ .main{
+	background-image: url("../img/background.jpg"); 
+	background-repeat: no-repeat;
+ }
+ .main_pic{
+	display: block;
+	margin: 0 auto;
  }
  .title{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	text-align: center;
+	margin-top: 180px;
 	
  }
  
