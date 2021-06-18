@@ -39,11 +39,17 @@
 	 margin: 0 auto;
 	 height: 100%;
 	 min-height: 100%;
+	 position: relative;
  }
-
+.nav_logo{
+	position: absolute;
+	top:0;
+	left:531px;
+	z-index: 2;
+}
 .nav_item{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;	
 	margin: 0;
 	padding: 0;	
 }
@@ -70,17 +76,30 @@
  .main{
 	background-image: url("../img/background.jpg"); 
 	background-repeat: no-repeat;
+	margin-top: 35px;
+	min-height: 509px;
+	position: relative;
+ }
+ .main::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1200px;
+	height: 57px;
+	background-image: url("../img/bottom-bg.png");
  }
  .main_pic{
 	display: block;
 	margin: 0 auto;
+	padding-top: 76px;
  }
  .title{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	text-align: center;
-	margin-top: 180px;
+	margin-top: 42px;
 	
  }
  
