@@ -407,6 +407,7 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	padding-left: 13px;
+	border: 2px solid transparent;
 }
 .button_calendar{
 	position: absolute;
@@ -446,6 +447,7 @@
 	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	border: 2px solid transparent;
 }
 .people_text{
 	grid-column:1/2;
@@ -557,6 +559,8 @@
 	background-color:var(--special-active);
 	color: var(--basic-white-act);
 }
+/* cстили каталога */
+
 
 .catalog{
 	width:1200px;
