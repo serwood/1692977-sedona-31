@@ -34,6 +34,7 @@
 	--popup-shadow:rgba(0, 1, 1, 0.15);
 	--toggle:#ababab;
 	--toggle-shadow:rgba(171, 171, 171, 0.3);
+	--btn:#cacaca;
  }
  .page{
 	background-color: var(--bg-rating);	 
@@ -90,15 +91,19 @@
 	 font-size: 14px;
 	 line-height: 26px;
 	 font-weight: 700;
-	 text-decoration: none;	
-	 color: var(--basic-black);		 
+	 text-decoration: none;			 
  }
- 
-  .nav_item a:hover{
+ .link{
+	color: var(--basic-black);
+ }
+ .act{
+	 color:var(--basic-neutral);
+ }
+ .link:hover{
 	color: var(--special);
  }
  
- .nav_item a:active{
+ .link:active{
 	color: var(--basic-black);
 	opacity: 0.3;
  }
@@ -649,7 +654,28 @@
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-
+.filtr_check:disabled + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: 0;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox-off-dis.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.filtr_check:checked:disabled + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: 0;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-on-dis.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .price{
 	border: none;
 	padding: 0;	
@@ -820,6 +846,16 @@
 	border-style: none;
 	cursor: pointer;
 	background: transparent;
+	fill: var(--btn);
+}
+.arrow_btn:hover{
+	fill:var(--basic-black);
+}
+.arrow_btn:focus{
+	fill:var(--special);
+}
+.arrow_btn:active{
+	fill:var(--special);
 }
 .product_list {	
 	list-style: none;
@@ -829,6 +865,7 @@
 	display: grid;
 	grid-template-rows:1px 1fr 1px 1fr 1px 1fr;
 	gap:30px;
+	margin-bottom: 0;
 }
 .line_body{
 	width: 1200px;

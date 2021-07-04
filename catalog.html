@@ -15,10 +15,10 @@
 					<img  src="img/logo.svg" width="138" height="70" alt="логотип">
 				</a>
 				<ul class="nav_item">
-					<li><a href="blank.html">Информация</a></li>
-					<li><a href="blank.html">Фото и видео</a></li>
-					<li><a href="blank.html">Карта штата</a></li>
-					<li><a href="catalog.html">Гостиницы</a></li>
+					<li><a class="link" href="blank.html">Информация</a></li>
+					<li><a class="link" href="blank.html">Фото и видео</a></li>
+					<li><a class="link"  href="blank.html">Карта штата</a></li>
+					<li><a class="act link" href="catalog.html">Гостиницы</a></li>
 				</ul>
 			</nav>
 			</header>
@@ -46,11 +46,11 @@
 					<legend class="filtr_title">тип жилья:</legend>
 					<ul class="filtr_list">
 						<li>
-							<input class="filtr_check visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+							<input class="filtr_check visually-hidden" type="checkbox" name="hotel" id="hotel" checked >
 							<label class="filtr_text" for="hotel">гостиница</label>
 						</li>
 						<li>
-							<input class="filtr_check visually-hidden" type="checkbox" name="motel" id="motel" checked>
+							<input class="filtr_check visually-hidden" type="checkbox" name="motel" id="motel" >
 							<label class="filtr_text" for="motel">мотель</label>
 						</li>
 						<li>
@@ -99,10 +99,14 @@
 				</div>
 				<div class="arrow">
 					<button class="arrow_btn btn_up" type="button">
-						<img src="img/icon-up-dir.svg" width="11" height="10" alt="up">
+						<svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.5 0L0 10H11L5.5 0Z" />
+						</svg>
 					</button>
 					<button class="arrow_btn btn_down" type="button">
-						<img src="img/icon-down-dir.svg" width="11" height="10" alt="down">
+						<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.5 10L0 0H11" />
+						</svg>
 					</button>
 				</div>
 			</div>
