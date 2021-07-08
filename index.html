@@ -44,19 +44,19 @@
 				</div>
 				<ul class="list">
 					<li>
+						<img class="list_icon" src="img/icon-home.svg" width="75" height="72" alt="лого жильё">
 						<h2 class="list_title">Жильё</h2>
-						<p class="list_subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-						<img class="list_icon" src="img/icon-home.svg" width="75" height="72"alt="лого жильё">
+						<p class="list_subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино! </p>
 					</li>
 					<li>
+						<img class="list_icon" src="img/icon-burger.svg" width="75" height="70" alt="лого еда">
 						<h2 class="list_title">Еда</h2>
 						<p class="list_subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-						<img class="list_icon" src="img/icon-burger.svg" width="75" height="70"alt="лого еда">
 					</li>
 					<li>
+						<img class="list_icon" src="img/icon-box.svg" width="64" height="77" alt="лого сувениры">
 						<h2 class="list_title">Сувениры</h2>
 						<p class="list_subtitle">Не только китайского, но и местного	производства!!</p>
-						<img class="list_icon"src="img/icon-box.svg" width="64" height="77"alt="лого сувениры">
 					</li>
 				</ul>	
 				<div class="main_container">
@@ -95,7 +95,7 @@
 						<span class="button_text">ПОИСК ГОСТИНИЦЫ В седоне</span>					
 					</button>
 					<div class="popup_box">
-						<div class="popup_filtr">
+						<form class="popup_filtr" action="https://echo.htmlacademy.ru" method="get">
 							<label class="in_text popup_text" for="date_in">дата заезда:</label>
 							<div class="date_min"> 
 								<input class="input_min " type="text" id="date_in" name="min-date" placeholder="24 апреля 2017">
@@ -118,7 +118,7 @@
 							</div>
 							<label class="people_text popup_text" for="people_sum">взрослые:</label>
 							<div class="people">
-								<button class="min_button" type="button"aria-label="уменьшить">
+								<button class="min_button" type="button" aria-label="уменьшить">
 									<svg class="min_svg" width="12" height="3" viewBox="0 0 12 3"  xmlns="http://www.w3.org/2000/svg">
 										<rect width="12" height="3" />
 									</svg>	
@@ -144,10 +144,10 @@
 								</button>
 								<input class="children_input" type="text" id="children_sum" name="children" placeholder="0">
 							</div>
-							<button class="find" type="button" aria-label="найти">
+							<button class="find" type="submit" aria-label="найти">
 								<span class="find_text">Найти</span>					
 							</button>
-						</div>
+						</form>
 					</div>
 				</div>
 			</section>			
