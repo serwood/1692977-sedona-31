@@ -63,8 +63,10 @@
 						<legend class="price_text">Стоимость в сутки,<span class="rub"></span></legend>
 						<div class="price_range">
 							<div class="price_controls">
-								<input class="price_min" type="text" name="min-price" value="от 0">			
-								<input class="price_max" type="text" name="max-price" value="до 3000">
+								<label class="visually_hidden" for="price_min">цена от 0</label>
+								<input class="price_min" type="text" id="price_min" name="min-price" value="от 0">
+								<label class="visually_hidden" for="price_max">цена до 3000</label>
+								<input class="price_max" type="text" id="price_max" name="max-price" value="до 3000">
 								<div class="line"></div>
 							</div>
 							<div class="range_controls">
