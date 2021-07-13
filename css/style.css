@@ -43,15 +43,15 @@
 	--toggle: #ababab;
 	--toggle-shadow: rgba(171, 171, 171, 0.3);
 	--btn: #cacaca;
-	--main-bg: #56c4c4;
-	--catalog-bg: #3c6161;
+	--main-bg: #6c859a;
+	--catalog-bg: #47627c;
 }
 
 .page {
 	background-color: var(--bg-rating);	 
 }
 
-.container {	
+.container {
 	width: 1200px;
 	margin: 0;
 	padding: 0;
@@ -96,16 +96,16 @@
 	z-index: 2;
 }
 
-.nav_item{	
+.nav_item {
 	margin: 0;
-	padding: 0;		
-	height: 56px;
+	padding: 0;
+	min-height: 56px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	align-items: center;
 }
 
-.nav_item a{
+.nav_item a {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
@@ -129,11 +129,11 @@
 	opacity: 0.3;
 }
 
-.nav_item li{
+.nav_item li {
 	list-style: none;
 }
 
-.nav_item li:first-child {
+.nav_item li:nth-child(1) {
 	padding-left: 72px;
 	text-align: left;
 }
@@ -145,7 +145,7 @@
 	text-align: right;
 }
 
-.nav_item li:last-child {
+.nav_item li:nth-child(4) {
 	padding-right: 72px;
 	text-align: right;
 }
@@ -159,7 +159,7 @@
 }
 
 .main::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -173,8 +173,9 @@
 	line-height: 26px;
 	font-weight: 700;
 	text-align: center;
-	margin-top: 42px;
-	margin-bottom: 42px;	
+	display: block;
+	width: 616px;
+	margin: 42px auto;
 }
 
 .subtitle {
@@ -187,7 +188,7 @@
 .main_container {
 	display: grid;
 	grid-template-columns: 400px 400px 400px;
-	grid-template-rows: 256px;
+	min-height: 256px;
 }
 
 .title_city {
@@ -290,11 +291,12 @@
 	font-weight: 700;
 	background-color: var(--basic-neutral);
 	color: var(--basic-white);
-	border-style: none;
-	text-transform: uppercase;
 	margin: 0 auto;
 	width: 568px;
-	height: 86px;	
+	min-height: 86px;	
+	text-decoration: none;
+	text-align: center;
+	padding-top: 31px;
 }
 
 .form_button:hover {
@@ -318,7 +320,7 @@
 	justify-items: center;
 	background-color: var(--footer);
 	width: 1200px;
-	height: 120px;
+	min-height: 120px;
 }
 
 .contact {
@@ -356,7 +358,8 @@
 	justify-content: center;
 	align-items: center;
 	background-color: var(--special);	
-	fill: var(--basic-white);	
+	fill: var(--basic-white);
+	margin-bottom: 5px;
 }
 
 .smm_icon:hover {
@@ -414,7 +417,7 @@
 	left: 0;
 	box-shadow: 0px 7px 15px var(--popup-shadow);
 }
-.popup_filtr {
+.popup_filter {
 	display: grid;
 	grid-template-columns: 112px 114px 118px 114px;
 	grid-template-rows: 38px 38px 38px;
@@ -595,11 +598,11 @@
 	text-transform: uppercase;
 }
 
-.popup_filtr input:hover {
+.popup_filter input:hover {
 	background-color: var(--input-hover);
 }
 
-.popup_filtr input:focus {
+.popup_filter input:focus {
 	background-color: var(--basic-white);
 	outline: none;
 	border: 2px solid var(--input-focus);
@@ -654,9 +657,9 @@
 	margin: 0 auto;
 }
 
-.filtr_form {
+.filter_form {
 	color: var(--basic-white);
-	background: var(--catalog-bg) url("../img/background-catalog.jpg") repeat;
+	background: var(--catalog-bg) url("../img/background-catalog.jpg") round;
 	min-height: 191px;
 	display: grid;
 	grid-template-columns: 255px 1fr -webkit-min-content;
@@ -664,17 +667,17 @@
 	padding: 26px 71px 0 72px;	
 }
 
-.filtr_container {
+.filter_container {
 	border: none;
 	padding: 0;
 }
 
-.filtr_title {
+.filter_title {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;	
 }
-.filtr_list {
+.filter_list {
 	font-size: 14px;
 	line-height: 21px;	
 	list-style: none;
@@ -683,11 +686,11 @@
 	margin-top: 24px;
 }
 
-.filtr_list li {
+.filter_list li {
 	margin-top: 25px;
 }
 
-.filtr_text {
+.filter_text {
 	position: relative;
 	display: block;
 	cursor: pointer;
@@ -697,11 +700,11 @@
 	margin-left: 39px;
 }
 
-.filtr_check:focus + label {
+.filter_check:focus + label {
 	color: var(--special);
 }
 
-.filtr_check + label::before {
+.filter_check + label::before {
 	content: "";
 	position: absolute;
 	left: -42px;
@@ -713,7 +716,7 @@
 	background-position: 0 0;
 }
 
-.filtr_check:checked + label::before {
+.filter_check:checked + label::before {
 	content: "";
 	position: absolute;
 	left: -42px;
@@ -725,7 +728,7 @@
 	background-position: 0 0;
 }
 
-.filtr_check:disabled + label::before {
+.filter_check:disabled + label::before {
 	content: "";
 	position: absolute;
 	left: -42px;
@@ -737,7 +740,7 @@
 	background-position: 0 0;
 }
 
-.filtr_check:checked:disabled + label::before {
+.filter_check:checked:disabled + label::before {
 	content: "";
 	position: absolute;
 	left: -42px;
@@ -946,8 +949,8 @@
 }
 
 .arrow_btn {
-	padding: 2px;	
-	border-style: none;
+	padding: 2px;
+	text-decoration: none;
 	cursor: pointer;
 	background: transparent;
 	fill: var(--btn);
